@@ -24,27 +24,34 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 ## Procedure
 ## Program:
 ```
-module logicgates(a,b,y1,y2,y3,y4,y5,y6,y7);
-input a,b;
-output y1,y2,y3,y4,y5,y6,y7;
-and(y1,a,b);
-or(y2,a,b);
-not(y3,a) ;
-xor(y4,a,b);
-nand(y5,a,b);
-nor(y6,a,b);
-xnor(y7,a,b);
+module CombinationalLogic (A, B, C, D, F1):
+input A,B,C,D:
+output F1:
+wize Abar, Bbar, Cbar, Dbar, v,w,x,y,z:
+assign Abar-A
+assign Bbar-8;
+assign Cbar--C;
+assign Dbar-D:
+assign v-Abar&Bbar&Cbar&Dbaz:
+assign w-A&Cbar&Dbar:
+assign x Bbar&C&Dbar:
+assign y-Abar&B4C4D;
+assign z-B6Cbar6D;
+assign Fl-v|w|x|y|z;
 endmodule
 ```
 ## RTL realization
- ![WhatsApp Image 2023-12-11 at 15 26 16_65351aed](https://github.com/vibinrex/Experiment--02-Implementation-of-combinational-logic-/assets/152167280/8f26a65d-8b69-48ff-9269-40828b48be16)
+
+ ![ex-2 RTL](https://github.com/vibinrex/Experiment--02-Implementation-of-combinational-logic-/assets/152167280/e4e1bdec-8c27-4f75-a67a-256a4e53ecbe)
 
 
 ## Truth Table
-![WhatsApp Image 2023-12-11 at 15 26 16_a9c09085](https://github.com/vibinrex/Experiment--02-Implementation-of-combinational-logic-/assets/152167280/f3ec318c-2aa8-489f-8bac-b279b6ab8d91)
+
+![ex-2 table](https://github.com/vibinrex/Experiment--02-Implementation-of-combinational-logic-/assets/152167280/9ffe709e-ab4e-485e-8e36-d1688b13b7d8)
 
 ## Timing Diagram
-![WhatsApp Image 2023-12-11 at 15 26 15_f08848fb](https://github.com/vibinrex/Experiment--02-Implementation-of-combinational-logic-/assets/152167280/50ea01f8-087e-4d0c-8cf9-26c45265b15b)
+
+![ex-2 diagram](https://github.com/vibinrex/Experiment--02-Implementation-of-combinational-logic-/assets/152167280/cdd8ea87-b19a-4391-83b7-08d4b52e16d4)
 
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
